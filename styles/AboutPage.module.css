@@ -1,55 +1,85 @@
 /* AboutPage.module.css */
+
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
+  position: relative;
 }
 
-.profile {
-  text-align: center;
-  margin-bottom: 30px;
+.profileContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .profileImage {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%; /* Makes the image circular */
-  margin-bottom: 20px; /* Space between image and text */
+  position: relative;
+  width: 300px;  /* Adjust this for your image size */
+  height: 300px; /* Adjust this for your image size */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 5px solid #51ff00; /* Round border on the image */
+}
+
+.profilePic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .text h3 {
-  margin: 0;
-  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .text p {
   font-size: 16px;
-  color: #666;
+  color: #ffffff;
 }
 
 .options {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .button {
+  margin: 5px;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: #32f302;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.button:hover {
-  background-color: #0056b3;
-}
-
 .details {
-  margin-top: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns to the left */
 }
 
 .section {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.sectionList {  /* Add class to ul */
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sectionList li {
+  margin-bottom: 5px;
+}
+
+.active {
+  background-color: lightblue;
 }
