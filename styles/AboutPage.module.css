@@ -1,5 +1,6 @@
 /* AboutPage.module.css */
 
+/* Base styles */
 .container {
   display: flex;
   flex-direction: column;
@@ -48,6 +49,8 @@
 
 .options {
   margin-top: 20px;
+  display: flex;
+  gap: 10px;
 }
 
 .button {
@@ -71,7 +74,7 @@
   margin-bottom: 15px;
 }
 
-.sectionList {  /* Add class to ul */
+.sectionList {
   list-style-type: none;
   padding-left: 0;
 }
@@ -82,4 +85,102 @@
 
 .active {
   background-color: lightblue;
+}
+
+/* Responsive styles */
+
+/* For screens smaller than 600px (Mobile devices) */
+@media (max-width: 600px) {
+  .profileContainer {
+    margin-top: 30px;
+  }
+
+  .profileImage {
+    width: 200px; /* Adjust for mobile */
+    height: 200px;
+  }
+
+  .text h3 {
+    font-size: 18px; /* Slightly smaller heading for mobile */
+  }
+
+  .text p {
+    font-size: 14px; /* Smaller text for mobile */
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button {
+    padding: 8px 15px;
+    margin: 5px;
+  }
+
+  .details {
+    align-items: center; /* Center the sections for smaller screens */
+  }
+
+  .section {
+    margin-bottom: 10px;
+  }
+}
+
+/* For screens between 601px and 1024px (Tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .profileImage {
+    width: 250px; /* Adjust for tablets */
+    height: 250px;
+  }
+
+  .text h3 {
+    font-size: 20px; /* Slightly larger heading for tablets */
+  }
+
+  .text p {
+    font-size: 15px; /* Adjust text for tablets */
+  }
+
+  .options {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .button {
+    padding: 10px 20px;
+  }
+
+  .details {
+    align-items: flex-start;
+  }
+}
+
+/* For screens larger than 1024px (Desktop devices) */
+@media (min-width: 1025px) {
+  .profileImage {
+    width: 300px; /* Original size for desktop */
+    height: 300px;
+  }
+
+  .text h3 {
+    font-size: 22px; /* Larger heading for desktop */
+  }
+
+  .text p {
+    font-size: 16px; /* Standard text for desktop */
+  }
+
+  .options {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .button {
+    padding: 10px 25px;
+  }
+
+  .details {
+    align-items: flex-start;
+  }
 }

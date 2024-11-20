@@ -21,7 +21,7 @@ const AboutPage = () => {
         </div>
         <div className={styles.text}>
           <h3>About Me</h3>
-          <p>This is a brief introduction about myself. I am passionate about web development and design.</p>
+          <p> I am passionate about web development and design.</p>
         </div>
       </div>
 
